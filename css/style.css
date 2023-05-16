@@ -10,9 +10,10 @@ input {
     padding: 5px 10px;
     box-sizing: border-box;
     font-size: 1rem;
-    border: solid 1px #272727;
+    border: solid 1px #000811;
     margin-bottom: 15px;
     border-radius: 5px;
+    background: #f0f0f0;
 }
 
 button.submit {
@@ -69,6 +70,7 @@ button.submit:hover {
     border-radius: 5px;
     margin: 0 auto;
     margin-top: 100px;
+    box-shadow: 5px 5px 10px #00000056;
 }
 
 .form-div form {
@@ -79,13 +81,13 @@ button.submit:hover {
 
 .form-div h2 {
     text-align: center;
-    color: #272727;
+    color: #000811;
     width: 100%;
 }
 
 .alert-div {
     position: fixed;
-    top: 1px;
+    top: 25px;
     width: 100%;
     justify-content: center;
     display: flex;
