@@ -87,8 +87,8 @@ function submit(event) {
 }
 
 function showAlert() {
-    alertHtml.style.display = "flex";
-    setTimeout(() => alertHtml.style.display = "none", 3000);  
+    alertHtml.style.transform = "scale(1)";
+    setTimeout(() => alertHtml.style.transform = "scale(0)", 3000);  
 }
 
 function error(cond, item) {

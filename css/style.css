@@ -84,11 +84,11 @@ button.submit:hover {
 }
 
 .alert-div {
-    position: absolute;
+    position: fixed;
     top: 1px;
     width: 100%;
     justify-content: center;
-    display: none;
+    display: flex;
 }
 
 .alert {
@@ -101,6 +101,7 @@ button.submit:hover {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    transform: scale(0);
 }
 
 .alert p {
