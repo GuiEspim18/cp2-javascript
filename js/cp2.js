@@ -35,6 +35,7 @@ function init() {
     light();
     for (let item of inputs) {
         item.style.outline = "none";
+        if (item.nodeName === "INPUT") addFocus(item);
         if (item.id === "name" || item.id === "surname") {
             item.addEventListener("keyup", () => {
                 const cond = required(item);
@@ -138,9 +139,9 @@ function submit(event) {
 // função que faz com que o campo fique com a borda vermelha
 function error(cond, item) {
     if (!cond) {
-        item.style.border = "1px solid red";
+        item.classList.add("input-error");
     } else {
-        item.style.border = "solid 1px #272727";
+        item.classList.remove("input-error");
     }
 }
 
@@ -215,6 +216,16 @@ function dark() {
             if (element.classList.contains("light-card")) element.classList.remove("light-card");
             element.classList.add("dark-card");
         }
+    })
+}
+
+
+function addFocus(item) {
+    item.addEventListener("focus", () => {
+        item.classList.add("input-focus")
+    })
+    item.addEventListener("blur", () => {
+        item.classList.remove("input-focus")
     })
 }
 
