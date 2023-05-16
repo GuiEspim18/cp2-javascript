@@ -86,11 +86,6 @@ function submit(event) {
     }
 }
 
-function showAlert() {
-    alertHtml.style.transform = "scale(1)";
-    setTimeout(() => alertHtml.style.transform = "scale(0)", 3000);  
-}
-
 function error(cond, item) {
     if (!cond) {
         item.style.border = "1px solid red";
@@ -125,6 +120,12 @@ function validadePass(pass) {
         return false;
     }
     return true;
+}
+
+// show alert animation
+function showAlert() {
+    alertHtml.style.transform = "scale(1)";
+    setTimeout(() => alertHtml.style.transform = "scale(0)", 3000);  
 }
 
 init();
