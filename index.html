@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/scripts.js" defer></script>
+    <script src="./js/cp2.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-        <form action="" method="post" id="form">
-            <div>
-                <input type="text" id="name" placeholder="Nome">
+        <div class="alert-div" id="alert">
+            <div class="alert">
+                <p>Alguns campos estão inválidos!</p>
             </div>
-            <div>
-                <input type="text" id="surname" placeholder="Sobrenome">
-            </div>
-            <div>
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div>
-                <input type="password" id="password" placeholder="Senha">
-            </div>
-            <div>
-                <input type="password" id="passwordConfirm" placeholder="Confrime a senha">
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
+        </div>
+        <div class="form-div">
+            <h2>Cadastro</h2>
+            <form action="" method="post" id="form">
+                <div>
+                    <input type="text" id="name" placeholder="Nome">
+                </div>
+                <div>
+                    <input type="text" id="surname" placeholder="Sobrenome">
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Senha">
+                </div>
+                <div>
+                    <input type="password" id="passwordConfirm" placeholder="Confrime a senha">
+                </div>
+                <div>
+                    <button class="submit ripple">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 </html>

@@ -8,12 +8,13 @@ const inputs = [
     document.querySelector("#passwordConfirm")
 ];
 
+const alertHtml = document.querySelector("#alert");
+
 form.addEventListener("submit", (event) => submit(event));
 
 function init() {
     for (let item of inputs) {
         item.style.outline = "none";
-        item.style.border = "1px solid black";
         if (item.id != "email" && item.id != "password" && item.id != "passwordConfirm") {
             item.addEventListener("keyup", () => {
                 const cond = required(item);
@@ -79,17 +80,22 @@ function submit(event) {
     }
     // validando se tem algúm campo inválido
     if (validation.includes(false)) {
-        alert("Alguns campos estão inválidos!");
+        if (alertHtml.style.display === "" || alertHtml.style.display === "none") showAlert();
     } else {
         inputs.forEach(element => element.value = "");
     }
+}
+
+function showAlert() {
+    alertHtml.style.display = "flex";
+    setTimeout(() => alertHtml.style.display = "none", 3000);  
 }
 
 function error(cond, item) {
     if (!cond) {
         item.style.border = "1px solid red";
     } else {
-        item.style.border = "1px solid black";
+        item.style.border = "solid 1px #272727";
     }
 }
 
