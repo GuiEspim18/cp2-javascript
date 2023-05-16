@@ -10,34 +10,43 @@
 </head>
 <body>
     <main>
-        <div class="alert-div">
-            <div class="alert" id="alert">
-                <p>Alguns campos estão inválidos!</p>
+        <section>
+            
+            <div class="alert-div">
+                <div class="alert" id="alert">
+                    <p>Alguns campos estão inválidos!</p>
+                </div>
             </div>
-        </div>
-        <div class="form-div">
-            <h2>Cadastro</h2>
-            <form action="" method="post" id="form">
-                <div>
-                    <input type="text" id="name" placeholder="Nome">
-                </div>
-                <div>
-                    <input type="text" id="surname" placeholder="Sobrenome">
-                </div>
-                <div>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
-                <div>
-                    <input type="password" id="password" placeholder="Senha">
-                </div>
-                <div>
-                    <input type="password" id="passwordConfirm" placeholder="Confrime a senha">
-                </div>
-                <div>
-                    <button class="submit ripple">Enviar</button>
-                </div>
-            </form>
-        </div>
+            <div class="darkmode-div">
+                <button type="button" class="mode-button ripple" id="mode-btn">
+                    <img src="./img/sun.png" alt="image button dark mode">
+                    <p>Claro</p>
+                </button>
+            </div>
+            <div class="form-div" id="form-div">
+                <h2>Cadastro</h2>
+                <form action="" method="post" id="form">
+                    <div>
+                        <input type="text" id="name" placeholder="Nome">
+                    </div>
+                    <div>
+                        <input type="text" id="surname" placeholder="Sobrenome">
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="password" id="password" placeholder="Senha">
+                    </div>
+                    <div>
+                        <input type="password" id="passwordConfirm" placeholder="Confrime a senha">
+                    </div>
+                    <div>
+                        <button class="submit ripple">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

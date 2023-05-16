@@ -3,6 +3,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
 }
+body {
+    min-height: 100vh;
+    transition: 0.3s;
+}
 
 input {
     width: 300px;
@@ -10,10 +14,28 @@ input {
     padding: 5px 10px;
     box-sizing: border-box;
     font-size: 1rem;
-    border: solid 1px #000811;
     margin-bottom: 15px;
     border-radius: 5px;
+}
+
+.light-card {
+    background-color: #d9d9d9;
+}
+
+.dark-card {
+    background-color: #001735;
+}
+
+.light {
     background: #f0f0f0;
+    border: solid 1px #000811;
+    color: #000811;
+}
+
+.dark {
+    background: #001735;
+    border: solid 1px #d9d9d9;
+    color: #d9d9d9;
 }
 
 button.submit {
@@ -66,7 +88,6 @@ button.submit:hover {
 .form-div {
     width: 350px;
     padding: 20px;
-    background-color: #d9d9d9;
     border-radius: 5px;
     margin: 0 auto;
     margin-top: 100px;
@@ -109,4 +130,40 @@ button.submit:hover {
 .alert p {
     color: #f0f0f0;
     text-align: center;
+}
+
+.darkmode-div {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.mode-button {
+    height: 43px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #1077fd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mode-button:hover {
+    background-color: #0066eb; 
+}
+
+.mode-button p {
+    margin-left: 15px;
+    padding: 0;
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.mode-button img {
+    width: 30px;
 }
