@@ -5,7 +5,7 @@ html, body {
 }
 
 input {
-    width: 200px;
+    width: 300px;
     height: 35px;
     padding: 5px 10px;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ input {
 }
 
 button.submit {
-    width: 200px;
+    width: 300px;
     height: 35px;
     background: #1077fd;
     color: #d9d9d9;
